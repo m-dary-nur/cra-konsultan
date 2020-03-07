@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:checked + svg {
+    display: block;
+}
+
+.page {
+    height: calc(100vh);
+    overflow-y: auto;
+}
+
+.page-logged {
+    height: calc(100vh - 65px);
+    overflow-y: auto;
+}
+
+.right-minus-255 {
+    right: -255px;
+    transition: all .3s ease-out;
+}
+
+@media (min-width: 768px) {
+    .page-logged {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }   
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(https://rsms.me/inter/font-files/Inter-Regular.woff2?v=3.12) format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(https://rsms.me/inter/font-files/Inter-Medium.woff2?v=3.12) format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(https://rsms.me/inter/font-files/Inter-SemiBold.woff2?v=3.12) format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(https://rsms.me/inter/font-files/Inter-Bold.woff2?v=3.12) format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url(https://rsms.me/inter/font-files/Inter-roman.var.woff2?v=3.12) format("woff");
+}
